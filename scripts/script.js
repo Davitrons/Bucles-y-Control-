@@ -56,3 +56,12 @@ function sumatoriaNumeros(num = 5){
 
     console.log(`La suma de los números del 1 al ${num} es: ${suma}`);
 }
+
+function numeroDivisibles3(){
+    let max = 30;
+    for (let i = 1; i <= max; i++) {
+        if (i % 3 === 0) {
+            console.log(i);
+        }
+    }
+}
