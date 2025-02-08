@@ -16,3 +16,17 @@ function conteo(){
         console.log(contador);
     }
 }
+
+function clasificadorEdades(num = 25){
+    if (num <=0) {
+        console.log(`La edad no es válida.`);
+    } else if (num > 0 && num <=12) {
+        console.log(`Eres un niño.`)
+    } else if(num >= 13 && num <=19){
+        console.log(`Eres un adolescente.`);
+    } else if(num >= 20 && num <=64){
+        console.log(`Eres un adulto.`);
+    } else if(num >= 65){
+        console.log(`Eres un adulto mayor.`);
+    }
+}
