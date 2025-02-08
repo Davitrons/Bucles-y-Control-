@@ -45,3 +45,14 @@ function conteoRegresivo(){
     }
     console.log(`¡Despegue!`);
 }
+
+function sumatoriaNumeros(num = 5){
+    let suma = 0;
+    let cont = 1;
+    while (cont <= num) {
+        suma += cont;
+        cont+=1;
+    }
+
+    console.log(`La suma de los números del 1 al ${num} es: ${suma}`);
+}
