@@ -1,3 +1,11 @@
+const btn1 = document.getElementById("btn1").addEventListener('click', numerosPares);
+const btn2 = document.getElementById("btn2").addEventListener('click', conteo);
+const btn3 = document.getElementById("btn3").addEventListener('click', clasificadorEdades);
+const btn4 = document.getElementById("btn4").addEventListener('click', tablaMultiplicar);
+const btn5 = document.getElementById("btn5").addEventListener('click', conteoRegresivo);
+const btn6 = document.getElementById("btn6").addEventListener('click', sumatoriaNumeros);
+const btn7 = document.getElementById("btn7").addEventListener('click', numeroDivisibles3);
+
 // FUNCIONES //
 function numerosPares(){
     let pares = '';
@@ -5,7 +13,7 @@ function numerosPares(){
         if( i % 2 == 0)
         pares += `${i} `;
     }
-    return pares;
+    return console.log(pares);
 }
 
 function conteo(){
@@ -17,7 +25,8 @@ function conteo(){
     }
 }
 
-function clasificadorEdades(num = 25){
+function clasificadorEdades(){
+    let num = 25;
     if (num <=0) {
         console.log(`La edad no es válida.`);
     } else if (num > 0 && num <=12) {
@@ -46,9 +55,10 @@ function conteoRegresivo(){
     console.log(`¡Despegue!`);
 }
 
-function sumatoriaNumeros(num = 5){
+function sumatoriaNumeros(){
     let suma = 0;
     let cont = 1;
+    let num = 5
     while (cont <= num) {
         suma += cont;
         cont+=1;
